@@ -5,15 +5,13 @@ int main(){
   bool flagError = false;
   int sumResidents = 0;
   int countResidents = 0;
-  int residentsFloor = 0;
   int arr[5] = {};
   std::cout << "Enter the number of tenants" << std::endl;
   std::cin >> countResidents;
   std::cout << "Enter the number of tenants per floors" << std::endl;
   for(int i = 0; i < 5; i++){
-    std::cin >> residentsFloor;
-    arr[i] = residentsFloor;
-    sumResidents +=residentsFloor;
+    std::cin >> arr[i];
+    sumResidents +=arr[i];
   }
   if(sumResidents > countResidents){
     std::cout << "The house has more residents than registered " << sumResidents << std::endl;
